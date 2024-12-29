@@ -2,11 +2,10 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
-import ServicesScreen from './screens/ServicesScreen';
-import RidesScreen from './screens/RidesScreen';
-import ProfileScreens from './screens/ProfileScreens';
-import HomeStackNavigator from './navigation/HomeStackNavigator';
-
+import HomeScreen from '../screens/Home/HomeScreen';
+import ServicesScreen from '../screens/ServicesScreen';
+import RidesScreen from '../screens/RidesScreen';
+import ProfileScreens from '../screens/ProfileScreens';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,7 +31,7 @@ export default function BottomTabNavigator() {
           headerShown: false,
         })}
       >
-     <Tab.Screen name="Home" component={HomeStackNavigator} options={{ headerShown: false }} />
+     <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
 <Tab.Screen name="Services" component={ServicesScreen} options={{ headerShown: false }} />
 <Tab.Screen name="Rides" component={RidesScreen} options={{ headerShown: false }} />
 <Tab.Screen name="Profile" component={ProfileScreens} options={{ headerShown: false }} />

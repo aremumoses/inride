@@ -8,6 +8,9 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "permissions": [
+      "location"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -15,7 +18,13 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBtnu-619g18XwmRx66cO6zMzuHJiWP57E"
+        }
+      },
+      "package": "com.aremumoses.inride"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +45,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "943974b5-c1a5-4b88-bb45-fcc622f6b382"
+      }
     }
   }
 }
