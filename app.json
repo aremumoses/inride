@@ -19,11 +19,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyBtnu-619g18XwmRx66cO6zMzuHJiWP57E"
-        }
-      },
+     
       "package": "com.aremumoses.inride"
     },
     "web": {
